@@ -280,7 +280,7 @@ type Msg = TranslationsLoaded (Result Http.Error Translations)
 init : (Model, Cmd Msg)
 init = (
   { translations = initialTranslations }
-  , fetchTranslations TranslationsLoaded "/locale/translation.en.json"
+  , fetchTranslations TranslationsLoaded "/locale/translations.en.json"
   )
 
 update : Msg -> Model -> ( Model, Cmd Msg )
@@ -288,7 +288,7 @@ update msg model =
     case msg of
         TranslationsLoaded (Ok translations) ->
             ( { model | translations = translations },
-              fetchTranslations TranslationsLoaded "/locale/translation.jp.json"
+                fetchTranslations TranslationsLoaded "/locale/translations.jp.json"
             )
 
         TranslationsLoaded (Err _) ->

@@ -1,10 +1,7 @@
 {
-  "a": "Hello English",
-  "b": {
-    "c": "bye",
-    "d": "Good day {{name}}",
-    "e": {
-      "f": "Hello {{firstname}} {{lastname}}"
-    }
+  "hello": "Hallo English",
+  "greetings": {
+    "goodDay": "Good Day.",
+    "greetName": "Hi {{name}}"
   }
 }
