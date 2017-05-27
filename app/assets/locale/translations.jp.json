@@ -1,0 +1,10 @@
+{
+  "a": "Konnichiwa",
+  "b": {
+    "c": "bye",
+    "d": "Good day {{name}}",
+    "e": {
+      "f": "Hellos {{firstname}} {{lastname}}"
+    }
+  }
+}
